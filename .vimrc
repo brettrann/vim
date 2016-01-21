@@ -211,6 +211,8 @@ let g:SuperTabDefaultCompletionType = "context"
 nnoremap <leader><leader> <c-^>
 
 " vim-rspec mappings
+let g:rspec_command = "Dispatch bundle exec rspec -fd {spec}"
+" let g:rspec_command = "Dispatch rspec {spec}"
 nnoremap <Leader>t :call RunCurrentSpecFile()<CR>
 nnoremap <Leader>s :call RunNearestSpec()<CR>
 nnoremap <Leader>l :call RunLastSpec()<CR>
