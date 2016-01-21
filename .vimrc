@@ -167,11 +167,13 @@ endif
 
 colorscheme desert
 set t_Co=256
+highlight Search term=reverse ctermfg=0 ctermbg=12 guifg=wheat guibg=peru
 
 
 if exists('+colorcolumn')
   set textwidth=80
-  execute "set colorcolumn=" . join(range(81,400), ',')
+  " execute "set colorcolumn=" . join(range(81,400), ',')
+  set colorcolumn=+1
   highlight ColorColumn ctermfg=242 ctermbg=0 guibg=DarkBlue
 endif
 
