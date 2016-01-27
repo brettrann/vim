@@ -180,7 +180,7 @@ endif
 " Follow tabstop
 set softtabstop=-1 shiftwidth=0
 
-au FileType ruby setlocal tabstop=2 expandtab
+au FileType ruby,eruby setlocal tabstop=2 expandtab
 
 au FileType perl setlocal tabstop=4 noexpandtab
 let perl_include_pod = 1
@@ -219,6 +219,7 @@ nnoremap <Leader>t :call RunCurrentSpecFile()<CR>
 nnoremap <Leader>s :call RunNearestSpec()<CR>
 nnoremap <Leader>l :call RunLastSpec()<CR>
 nnoremap <Leader>a :call RunAllSpecs()<CR>
+" nnoremap <Leader>a :Dispatch bundle exec rake parallel:spec<CR>
 
 " Run commands that require an interactive shell
 nnoremap <Leader>r :RunInInteractiveShell<space>
@@ -234,7 +235,7 @@ nnoremap <C-k> <C-w>k
 " nnoremap <C-l> <C-w>l
 
 " spell checking automation
-command SpellOn setlocal spell spelllang=en_us
+command! SpellOn setlocal spell spelllang=en_us
 map <F5> :SpellOn<CR>
 autocmd BufRead,BufNewFile *.md,*.txt :SpellOn
 autocmd FileType gitcommit,markdown,text :SpellOn
