@@ -180,6 +180,9 @@ endif
 " Follow tabstop
 set softtabstop=-1 shiftwidth=0
 
+" default
+set tabstop=2 expandtab
+
 au FileType ruby,eruby setlocal tabstop=2 expandtab
 
 au FileType perl setlocal tabstop=4 noexpandtab
