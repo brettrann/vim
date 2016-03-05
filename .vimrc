@@ -38,13 +38,11 @@ VAMActivate
   \ endwise
   \ eunuch
   \ fugitive
-  \ FuzzyFinder
   \ github:christoomey/vim-run-interactive
   \ github:nathanaelkane/vim-indent-guides
   \ github:thoughtbot/vim-rspec
   \ github:tommcdo/vim-fubitive
   \ ingo-library
-  \ L9
   \ ragtag
   \ rails
   \ rake
