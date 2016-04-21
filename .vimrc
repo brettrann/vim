@@ -237,6 +237,7 @@ nnoremap <C-k> <C-w>k
 
 " spell checking automation
 command! SpellOn setlocal spell spelllang=en_us
+" setlocal nospell would turn it off... not toggling on OS X but does on arch?
 map <F5> :SpellOn<CR>
 autocmd BufRead,BufNewFile *.md,*.txt :SpellOn
 autocmd FileType gitcommit,markdown,text :SpellOn
